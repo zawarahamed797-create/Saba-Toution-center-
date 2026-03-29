@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba Tuition Center | روشن مستقبل کی ضمانت</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --light: #ecf0f1;
+            --success: #27ae60;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            direction: rtl; /* Urdu Alignment */
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .contact-btn {
+            background: var(--accent);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; }
+
+        /* Features Section */
+        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card i { font-size: 40px; color: var(--accent); margin-bottom: 15px; }
+
+        /* Classes/Subjects Section */
+        .subject-tag {
+            display: inline-block;
+            background: var(--light);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-weight: 500;
+        }
+
+        /* Registration Form Area */
+        .cta-box {
+            background: var(--primary);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        .whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            header { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">SABA TUITION CENTER</div>
+    <a href="tel:+923001234567" class="contact-btn"><i class="fas fa-phone"></i> رابطہ کریں</a>
+</header>
+
+<section class="hero">
+    <h1>صبا ٹیوشن سینٹر</h1>
+    <p>معیاری تعلیم، بہتر مستقبل کے لیے ایک قدم</p>
+</section>
+
+<div class="container">
+    <center><h2 class="section-title">ہماری خصوصیات</h2></center>
+    <div class="grid">
+        <div class="card">
+            <i class="fas fa-user-graduate"></i>
+            <h3>تجربہ کار اساتذہ</h3>
+            <p>ہماری ٹیم اعلیٰ تعلیم یافتہ اور پڑھانے کے جدید طریقوں سے واقف ہے۔</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-book-open"></i>
+            <h3>انفرادی توجہ</h3>
+            <p>ہر طالب علم کی کمزوریوں پر الگ سے توجہ دی جاتی ہے۔</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-vial"></i>
+            <h3>ماہانہ ٹیسٹ</h3>
+            <p>باقاعدگی سے ٹیسٹ اور رپورٹ کارڈ کے ذریعے کارکردگی کا جائزہ۔</p>
+        </div>
+    </div>
+
+    <center><h2 class="section-title" style="margin-top: 60px;">کلاسز اور مضامین</h2></center>
+    <div class="grid">
+        <div class="card" style="text-align: right;">
+            <h3 style="color: var(--accent);"><i class="fas fa-school"></i> پرائمری تا مڈل</h3>
+            <p>تمام مضامین بشمول انگلش، ریاضی اور سائنس۔</p>
+            <div class="subject-tag">Class 1-8</div>
+        </div>
+        <div class="card" style="text-align: right;">
+            <h3 style="color: var(--accent);"><i class="fas fa-microscope"></i> میٹرک (Science/Arts)</h3>
+            <p>فزکس، کیمسٹری، بیالوجی اور میتھ کی خصوصی تیاری۔</p>
+            <div class="subject-tag">9th & 10th</div>
+        </div>
+        <div class="card" style="text-align: right;">
+            <h3 style="color: var(--accent);"><i class="fas fa-university"></i> انٹرمیڈیٹ (FSc/ICS)</h3>
+            <p>بورڈ پیپرز کی مکمل تیاری اور گیس پیپرز۔</p>
+            <div class="subject-tag">1st Year & 2nd Year</div>
+        </div>
+    </div>
+
+    <div class="cta-box">
+        <h2>کیا آپ داخلہ لینا چاہتے ہیں؟</h2>
+        <p>ابھی نیچے دیے گئے بٹن پر کلک کریں اور واٹس ایپ پر تفصیلات حاصل کریں۔</p>
+        <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum! I want to inquire about admission in Saba Tuition Center." class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i> واٹس ایپ پر رابطہ کریں
+        </a>
+    </div>
+
+    <div style="margin-top: 50px; text-align: center; color: #666;">
+        <h3><i class="fas fa-map-marker-alt"></i> ہمارا پتہ</h3>
+        <p>پھالیہ روڈ، نزد وارث ہسپتال، منڈی بہاؤالدین</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Saba Tuition Center - تمام حقوق محفوظ ہیں</p>
+</footer>
+
+</body>
+                                                         </html>
+
